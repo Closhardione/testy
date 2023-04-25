@@ -20,4 +20,11 @@ class FoodProductTest {
         assertEquals(1.53,test.getPrice(2010,1,"DOLNOŚLĄSKIE"));
     }
 
+    @Test
+    void fromCsvTest3(){
+        Path file = Path.of("C:\\Users\\Student\\Desktop\\Aleksadner Stoń\\testy\\src\\test\\resources\\buraki.csv");
+        FoodProduct test = FoodProduct.fromCsv(file);
+        assertEquals(1.53,test.getPrice(2010,1,"DOLNOŚLĄSKIE"));
+    }
+
 }
